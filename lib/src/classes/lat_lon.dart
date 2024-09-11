@@ -3,7 +3,9 @@ class GeoLatLon {
   final double latitude;
   final double longitude;
 
-  GeoLatLon(this.latitude, this.longitude);
+  const GeoLatLon(this.latitude, this.longitude);
+
+  GeoLatLon.fromList(List<double> list) : this(list[0], list[1]);
 
   @override
   String toString() => "GeofenceLatLon(latitude: $latitude, longitude: $longitude)";

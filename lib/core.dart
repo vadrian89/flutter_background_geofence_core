@@ -3,5 +3,6 @@
 /// These can be: enums, exceptions, typedefs, etc.
 library core;
 
-export 'src/core/event.dart';
+export 'src/core/enums.dart';
 export 'src/core/typedefs.dart';
+export 'src/core/constants.dart';

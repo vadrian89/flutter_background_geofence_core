@@ -20,6 +20,11 @@ abstract class GeofenceRegionBase {
   /// Listen to these geofence events.
   final List<GeofenceEvent> triggers;
 
+  /// Retrieve the fields of this object as a list of arguments.
+  ///
+  /// Used to be sent through the platform channel.
+  List<dynamic> get toArgs;
+
   const GeofenceRegionBase({
     required this.id,
     required this.coordinates,
